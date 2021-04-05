@@ -9,14 +9,35 @@
     
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel ="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel ="stylesheet" href ="node_modules/bootstrap-social/bootstrap-social.css">
         <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion: About Us</title>
 
 </head>
 
 <body>
-
     <header class="jumbotron">
+
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type ="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                <a class="navbar-brand mr-auto " href="./index.html">Ristorante Con Fusion</a> <pre> </pre>
+            <div class="collapse navbar-collapse" id ="Navbar">
+                
+                <ul class="navbar-nav mr-auto">
+                <l1 class ="nav-item"><a class="nav-link" href="./index.html"><i class="fa fa-home fa-lg"></i>Home</a></l1>
+                <l1 class ="nav-item"><a class="nav-link active " href="./aboutus.html"><i class="fa fa-info-circle fa-sm"></i>About US</a></l1>
+                <l1 class ="nav-item"><a class="nav-link" href="#"><i class="fa fa-list-ul fa-sm"></i>Menu</a></l1>
+                <l1 class ="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-sm"></i>Contacts</a></l1>
+            </ul>
+            </div>
+            </div>
+        </nav>
+        
         <div class="container">
             <div class="row ro 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifw-header">
                 <div class="col-12 col-sm-8">
@@ -30,19 +51,24 @@
     </header>
 
     <div class="container">
-        <div class="row row-about">
-            <div >
+        <div class="row">
+            <ol class="col 12 breadcrumb">
+                <li class="breadcrumb-item"><a href ="./index.html"> Home </a></li>
+                <li class="breadcrumb-item active" aria-current="page">About Us</li>      
+            </ol>
+            <div class="col 12"></div>
+        </div>         
+           <div class="col 12">
                <h3>About Us</h3>
                <hr>
             </div>
         </div>
-        </div>
-
-        <div class="container">
+       
+       
             <div class ="row row-content">
                 <div class="col-sm-6">
                 <h2 style="
-                font-family: "Lucida Console", "Courier New", monospace;
+                font-family: Lucida Console, "Courier New", monospace;
                 font-weight:bolder;
               ">Our History</h2>
                
@@ -79,10 +105,10 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#"><i class="fa fa-home fa-lg"></i>Home</a></li>
+                        <li><a href="#"><i class="fa fa-info-circle fa-lg"></i>About</a></li>
+                        <li><a href="#"><i class="fa fa-list fa-lg"></i>Menu</a></li>
+                        <li><a href="#"><i class="fa fa-address-book fa-lg"></i>Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5">
@@ -91,19 +117,18 @@
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
 		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+		              <i class="fa fa-phone"></i>Tel.: +852 1234 5678<br>
+		              <i class="fa fa-fax"></i>Fax: +852 8765 4321<br>
+		              <i class="fa fa-mail-reply"></i>Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
+                        <a class="btn btn-google" href="http://google.com/+"><i class="fa fa-google-plus-square fa-lg"></i></a>
+                        <a class="btn btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook-square fa-lg"></i></a>
+                        <a class="btn btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin-square fa-lg"></i></a>
+                        <a class="btn btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter-square fa-lg"></i></a>
+                        <a class="btn btn-google" href="http://youtube.com/"><i class="fa fa-youtube-play fa-lg"></i></a>
                     </div>
                 </div>
            </div>
