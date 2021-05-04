@@ -54,3 +54,9 @@ body
 {
     background-color: #512DA8;
 }
+.tab-content
+{
+  padding : 20px;
+  border: 1em solid #ddd;
+
+}
