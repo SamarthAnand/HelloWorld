@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="./css/styles.css">
 
         <link rel ="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel ="stylesheet" href ="node_modules/bootstrap-social/bootstrap-social.css"
+        <link rel ="stylesheet" href ="node_modules/bootstrap-social/bootstrap-social.css">
     
 </head>
 
@@ -58,6 +58,89 @@
     </div>
     </div>
 
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-md" role="content">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title"> Reserve a Table </h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                  </button>
+              </div>
+              <div class="modal-body col-12">
+                <form>
+                    <div class="form-group row form-check form-check-inline">
+                        <label for="firstname" class=" col-sm-3">Number of Guests </label>
+                 
+                         <div class="form-check  form-check-inline   ">
+                        <label class="form-check-label">
+                          <input class="form-check-input radio-inline " type="radio" name="gridRadios" id="gridRadios1" value="1" checked>
+                          1 </label>
+                         </div> 
+                         <div class="form-check  form-check-inline ">
+                          <label class="form-check-label ">
+                          <input class="form-check-input radio-inline" type="radio" name="gridRadios" id="gridRadios2" value="2">
+                          2</label>
+                          </div>
+                          <div class="form-check  form-check-inline ">
+                          <label class="form-check-label ">
+                          <input class="form-check-input radio-inline" type="radio" name="gridRadios" id="gridRadios3" value="3">
+                          3</label>
+                          </div>
+                          <div class="form-check form-check-inline ">
+                          <label class="form-check-label ">
+                            <input class="form-check-input radio-inline" type="radio" name="gridRadios" id="gridRadios4" value="4">
+                            4</label>
+                          </div>
+                          <div class="form-check  form-check-inline ">
+                            <label class="form-check-label ">
+                                <input class="form-check-input radio-inline" type="radio" name="gridRadios" id="gridRadios5" value="5">
+                                5</label>
+                          </div>
+                          <div class="form-check  form-check-inline ">
+                                <label class="form-check-label ">
+                                    <input class="form-check-input radio-inline" type="radio" name="gridRadios" id="gridRadios6" value="6">
+                                    6</label>
+                                    </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="section" class=" col-sm-3 ">  Section</label>
+                            <div class="btn-group btn-group-toggle btn-group-sm" data-toggle="buttons">
+                                <label class="btn btn-sm-0 btn-success  active">
+                                  <input type="radio" name="options" id="option1" autocomplete="on" checked> Non-Smoking
+                                </label>
+                                <label class="btn btn-danger btn-sm-0">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                </label>   
+                        </div>
+                        </div>
+                       <div class="form-group row">
+                           <label for="DateandTime" class="col-md-3" > Date and Time</label>
+                      <div class="form-group col-sm-4">
+                        <label class="sr-only " for="exampleInput"> Date
+                        </label>
+                            <input class="form-control form-control-sm mr-1" type="date" placeholder="Date"> 
+                  </div>
+                  <div class="form-group col-sm-auto">
+                    <label class="sr-only" for="exampleInput"> Time
+                    </label>
+                        <input class="form-control form-control-sm mr-1" type="time" placeholder="time"> 
+              </div>
+              </div>
+              <div class="form-row ">
+              <div class="offset-3">
+                <button type="button" class="btn btn-secondary btn-sm ml-auto " data-dismiss="modal"> Cancel </button>
+                <button type="submit" class="btn btn-primary btn-sm ml-1"> Reserve </button>        
+            </div>
+              </div>
+                </form>
+              </div>
+          </div>
+        </div>
+        </div>
+    
+   
+
     <header class="jumbotron">
         <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
             <div class="container">
@@ -85,6 +168,7 @@
         </nav>
         
         <div class="container">
+            
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1><mark>Ristorante con Fusion</mark></h1>
@@ -94,14 +178,24 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="resource/img/logo.png" class="img-fluid">
             </div>
+            
+            <!-- span class="navbar-text">
+                <a data-toggle="modal" data-target="#loginModal" >
+                    <span class="fa fa-sign-in"> Login </span>
+                </a>
+            </span -->
+            
                     <div class="col-12 col-sm align-self-center">
                             <a role="button" class=" btn btn-block btn-sm btn-warning "
-                            data-toggle="tool-tip" data-html="true" title="Call us at <br><strong> 09548343043 </strong>" data-placement="bottom"
-                             href= "#reserve-table">Reserve Table</a> 
+                            data-toggle="modal" data-target="#reserveModal"> Reserve Table </a> 
+                           
                            </div>
-                      </div>
-                </div>
+
+                    
+                
             </div>
+            </div>
+            
       
     </header>
 
@@ -229,7 +323,7 @@
             </div>
         </div>
     </div>
-    <div class="row row-content">
+    <!--div class="row row-content">
         <div class="col-12 col-md-7 offset-md-3">
             <div class="card">
                 <h3 class="card-header bg-dark text-white" id ="reserve-table">Reserve a Table</h3>
@@ -295,7 +389,7 @@
             </div>
         </div>      
 
-    </div>
+    </div-->
     </div>
 
     <footer class="footer">
@@ -342,8 +436,7 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script > $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();});</script>
+
 </body>
 
 </html>
